@@ -13,14 +13,6 @@ class Room(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
 
-class Availability(models.Model):
-    room = models.ForeignKey(Room, on_delete=models.CASCADE)
-    start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-
 class Booking(models.Model):
 
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
