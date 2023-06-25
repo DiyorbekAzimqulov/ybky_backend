@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fg@h!r_cshv+9e6if^@t--h1+^jx04-epcc6*1u525m+y#ci-e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -124,6 +124,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 OFFICE_HOURS = {
-    'start_time': time(hour=9, minute=0, second=0),
-    'end_time': time(hour=17, minute=0, second=0)
+    'start_time': time(hour=00, minute=0, second=0),
+    'end_time': time(hour=23, minute=59, second=59)
 }
